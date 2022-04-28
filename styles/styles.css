@@ -10,8 +10,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: ;
+  font-style: normal;
 }
+
+/* Хедер */
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -24,31 +27,30 @@ body {
 .logo-link {
   color: var(--logo-color);
 }
-
-.nav-list {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-}
-.nav-item {
-  list-style: none;
-}
-
+.nav-list,
 .nav-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  list-style: none;
 }
+
+.item {
+  list-style: none;
+}
+
 .studio {
   color: var(--accent-color);
+  text-decoration: none;
 }
+.studio:hover,
+.studio:focus {
+  color: #188ce8;
+}
+
 .studio:active {
   color: var(--logo-color);
 }
@@ -58,7 +60,6 @@ body {
   color: var(--accent-color);
 }
 .mail {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -69,6 +70,9 @@ body {
 .mail:focus {
   color: var(--accent-color);
 }
+.mail:active {
+  color: var(--logo-color);
+}
 .phone {
   font-style: normal;
   font-weight: 500;
@@ -77,8 +81,15 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+.phone:hover,
+.phone:focus {
+  color: var(--accent-color);
+}
+.phone:active {
+  color: var(--logo-color);
+}
 
-/* Hero */
+/* Герой */
 .hero {
   background-color: var(--secondary-background-color);
   width: 1600px;
@@ -86,7 +97,6 @@ body {
 }
 
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -96,8 +106,6 @@ body {
   color: var(--button-text-color);
 }
 .hero-button {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -107,8 +115,132 @@ body {
   letter-spacing: 0.06em;
   color: var(--button-text-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
 }
-.hero-button:hover,
-.hero-button:focus {
+.hero-button:hover {
   background-color: #188ce8;
+}
+.hero-button:focus {
+  background-color: var(--accent-color);
+}
+
+/* Основной контент */
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* Наша команда */
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* Футер */
+.footer {
+  background-color: var(--secondary-background-color);
+  width: 1600px;
+  height: 252px;
+}
+.logo-footer {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--button-text-color);
+}
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--button-text-color);
+}
+.footer-mail,
+.footer-phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+/* Вторая страница. ПОРТФОЛИО */
+/* Кнопки портфолио */
+.btn-active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--button-text-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: none;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+}
+
+.link {
+  text-decoration: none;
+}
+.subject {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
