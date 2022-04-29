@@ -1,4 +1,6 @@
 :root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -9,18 +11,30 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
-/* Хедер */
+.btn {
+  font-family: inherit;
+  color: currentColor;
+}
+
+/* 
+______
+Хедер 
+______
+*/
 
 .logo {
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -30,7 +44,6 @@ body {
 .nav-list,
 .nav-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
@@ -51,9 +64,6 @@ body {
   color: #188ce8;
 }
 
-.studio:active {
-  color: var(--logo-color);
-}
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
@@ -61,9 +71,9 @@ body {
 }
 .mail {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--title-text-color);
 }
 .mail:hover,
@@ -76,9 +86,9 @@ body {
 .phone {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--primary-text-color);
 }
 .phone:hover,
@@ -89,7 +99,11 @@ body {
   color: var(--logo-color);
 }
 
-/* Герой */
+/* 
+______
+Герой 
+______
+*/
 .hero {
   background-color: var(--secondary-background-color);
   width: 1600px;
@@ -103,6 +117,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--button-text-color);
 }
 .hero-button {
@@ -124,20 +139,19 @@ body {
   background-color: var(--accent-color);
 }
 
-/* Основной контент */
+/*
+________________
+Основной контент
+________________
+*/
 .title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: var(--title-text-color);
 }
 .text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .heading {
@@ -145,73 +159,82 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--title-text-color);
 }
 
-/* Наша команда */
+/* 
+____________
+Наша команда
+____________
+*/
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--title-text-color);
 }
 .job {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--primary-text-color);
 }
 
-/* Футер */
+/* 
+______
+Футер 
+______
+*/
 .footer {
   background-color: var(--secondary-background-color);
   width: 1600px;
   height: 252px;
 }
 .logo-footer {
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  letter-spacing: 0.03em;
+
   color: var(--button-text-color);
 }
 .address {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--button-text-color);
 }
 .footer-mail,
 .footer-phone {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
-/* Вторая страница. ПОРТФОЛИО */
-/* Кнопки портфолио */
+/*
+ __________________________ 
+Вторая страница. ПОРТФОЛИО 
+___________________________
+*/
+/*
+_________________
+Кнопки портфолио 
+_________________
+*/
 .btn-active {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--button-text-color);
-  background-color: var(--accent-color);
   border-radius: 4px;
   border: none;
+
+  color: var(--button-text-color);
+  background-color: var(--accent-color);
 }
 
 .button {
@@ -220,10 +243,11 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  background-color: #f5f4fa;
   border-radius: 4px;
   border: none;
+
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
 }
 
 .link {
@@ -234,13 +258,14 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--title-text-color);
 }
 
 .description {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+
   color: var(--primary-text-color);
 }
