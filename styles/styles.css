@@ -18,16 +18,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.btn {
-  font-family: inherit;
-  color: currentColor;
-}
-
-/* 
-______
-Хедер 
-______
-*/
+/*======================= Хедер ============================*/
 
 .logo {
   font-family: var(--secondary-font);
@@ -55,12 +46,12 @@ ______
   list-style: none;
 }
 
-.studio {
+.current {
   color: var(--accent-color);
   text-decoration: none;
 }
-.studio:hover,
-.studio:focus {
+.current:hover,
+.current:focus {
   color: #188ce8;
 }
 
@@ -99,11 +90,7 @@ ______
   color: var(--logo-color);
 }
 
-/* 
-______
-Герой 
-______
-*/
+/*========================== Герой ========================*/
 .hero {
   background-color: var(--secondary-background-color);
   width: 1600px;
@@ -132,18 +119,12 @@ ______
   background-color: var(--accent-color);
   border-radius: 4px;
 }
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #188ce8;
 }
-.hero-button:focus {
-  background-color: var(--accent-color);
-}
 
-/*
-________________
-Основной контент
-________________
-*/
+/*=============================== Основной контент ================================*/
 .title {
   font-weight: 700;
   line-height: 1.14;
@@ -163,11 +144,7 @@ ________________
   color: var(--title-text-color);
 }
 
-/* 
-____________
-Наша команда
-____________
-*/
+/*================================= Наша команда ===============================*/
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -184,11 +161,7 @@ ____________
   color: var(--primary-text-color);
 }
 
-/* 
-______
-Футер 
-______
-*/
+/*============================ Футер =========================*/
 .footer {
   background-color: var(--secondary-background-color);
   width: 1600px;
@@ -214,15 +187,11 @@ ______
   text-decoration: none;
 }
 
+/* ================ Вторая страница. ПОРТФОЛИО =====================*/
 /*
- __________________________ 
-Вторая страница. ПОРТФОЛИО 
 ___________________________
-*/
-/*
-_________________
 Кнопки портфолио 
-_________________
+___________________________
 */
 .btn-active {
   font-weight: 500;
