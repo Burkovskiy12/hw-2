@@ -68,12 +68,16 @@ body {
   color: var(--title-text-color);
 }
 .mail:hover,
-.mail:focus {
+.mail:focus,
+.phone:hover,
+.phone:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-phone:hover,
+.footer-phone:focus {
   color: var(--accent-color);
 }
-.mail:active {
-  color: var(--logo-color);
-}
+
 .phone {
   font-style: normal;
   font-weight: 500;
@@ -82,10 +86,7 @@ body {
   text-decoration: none;
   color: var(--primary-text-color);
 }
-.phone:hover,
-.phone:focus {
-  color: var(--accent-color);
-}
+
 .phone:active {
   color: var(--logo-color);
 }
@@ -107,6 +108,13 @@ body {
 
   color: var(--button-text-color);
 }
+.hero-button,
+.button,
+.btn-active {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
 .hero-button {
   font-weight: 700;
   font-size: 16px;
@@ -115,6 +123,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--button-text-color);
   background-color: var(--accent-color);
   border-radius: 4px;
@@ -218,6 +227,16 @@ ___________________________
   color: var(--title-text-color);
   background-color: #f5f4fa;
 }
+
+.button:hover,
+.button:focus,
+.btn-active:hover,
+.btn-active:focus {
+  color: var(--button-text-color);
+  background-color: var(--accent-color);
+}
+
+/* ====================== Галерея портфолио ===================== */
 
 .link {
   text-decoration: none;
