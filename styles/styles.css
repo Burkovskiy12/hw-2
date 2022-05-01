@@ -8,6 +8,7 @@
   --button-text-color: #ffffff;
   --main-background-color: #e5e5e5;
   --secondary-background-color: #2f303a;
+  --our-team-background-color: #f5f4fa;
 }
 
 body {
@@ -168,6 +169,9 @@ body {
   text-align: center;
 
   color: var(--primary-text-color);
+}
+.our-team {
+  background-color: var(--our-team-background-color);
 }
 
 /*============================ Футер =========================*/
